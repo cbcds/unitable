@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_mark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/string_hint_enter_mark"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_add_mark_error_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/et_mark"
+        app:layout_constraintStart_toStartOf="@id/et_mark"
+        app:layout_constraintTop_toBottomOf="@+id/et_mark" />
+
+    <TextView
+        android:id="@+id/tv_choose_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/string_select_date"
+        app:layout_constraintEnd_toEndOf="@id/tv_add_mark_error_msg"
+        app:layout_constraintStart_toStartOf="@id/tv_add_mark_error_msg"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_mark_error_msg" />
+
+    <DatePicker
+        android:id="@+id/dp_mark_date"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        app:layout_constraintEnd_toEndOf="@id/tv_choose_date"
+        app:layout_constraintStart_toStartOf="@id/tv_choose_date"
+        app:layout_constraintTop_toBottomOf="@+id/tv_choose_date" />
+
+    <Button
+        android:id="@+id/dlg_button_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/button_dialog_margin"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="?attr/colorAccent"
+        android:text="@string/string_button_ok"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dp_mark_date" />
+
+    <Button
+        android:id="@+id/dlg_button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/button_dialog_margin"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="?attr/colorAccent"
+        android:text="@string/string_button_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dp_mark_date" />
+
+</android.support.constraint.ConstraintLayout>

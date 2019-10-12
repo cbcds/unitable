@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name" translatable="false">UniTable</string>
+
+    <string name="string_monday">Monday</string>
+    <string name="string_tuesday">Tuesday</string>
+    <string name="string_wednesday">Wednesday</string>
+    <string name="string_thursday">Thursday</string>
+    <string name="string_friday">Friday</string>
+    <string name="string_saturday">Saturday</string>
+
+    <string-array name="array_days">
+        <item>@string/string_monday</item>
+        <item>@string/string_tuesday</item>
+        <item>@string/string_wednesday</item>
+        <item>@string/string_thursday</item>
+        <item>@string/string_friday</item>
+        <item>@string/string_saturday</item>
+    </string-array>
+
+    <string-array name="array_languages">
+        <item>@string/string_lang_belarusian</item>
+        <item>@string/string_lang_english</item>
+        <item>@string/string_lang_russian</item>
+    </string-array>
+
+    <string-array name="array_lang_code">
+        <item>@string/string_belarusian_code</item>
+        <item>@string/string_english_code</item>
+        <item>@string/string_russian_code</item>
+    </string-array>
+
+    <!-- activity_main -->
+    <string name="string_monday_short">Mon</string>
+    <string name="string_tuesday_short">Tue</string>
+    <string name="string_wednesday_short">Wed</string>
+    <string name="string_thursday_short">Thu</string>
+    <string name="string_friday_short">Fri</string>
+    <string name="string_saturday_short">Sat</string>
+    <string name="string_marks_list">My marks</string>
+
+    <!-- activity_marks -->
+    <string name="string_subject">Subject</string>
+    <string name="string_average">Average</string>
+    <string name="string_new_subject">New subject</string>
+    <string name="string_hint_enter_subject">Enter subject name</string>
+    <string name="string_delete_message">Are you sure you want to delete %1$s?</string>
+    <string name="string_subject_length_error">Name must be less than 50 characters</string>
+    <string name="string_subject_empty_error">Name must be at least 1 character long</string>
+    <string name="string_subject_exists_error">This subject already exists</string>
+
+    <!-- activity_edit_marks -->
+    <string name="string_mark">Mark</string>
+    <string name="string_date">Date</string>
+    <string name="string_new_mark">New mark</string>
+    <string name="string_hint_enter_mark">Enter mark</string>
+    <string name="string_select_date">Select a date:</string>
+    <string name="string_delete_mark_message">Are you sure you want to delete mark?</string>
+    <string name="string_mark_range_error">Mark must be in range 1–100</string>
+
+    <!-- activity_classes -->
+    <string name="string_time">Time</string>
+    <string name="string_class_info">Class information</string>
+    <string name="string_classroom">CR</string>
+    <string name="string_completion">Cmp.</string>
+    <string name="string_hint_enter_classroom_number">Enter classroom number</string>
+    <string name="string_hint_enter_homework">Enter homework</string>
+    <string name="string_class_number">Number:</string>
+    <string name="string_class_day">Day:</string>
+    <string name="string_class_completion">Completion:</string>
+    <string name="string_replace">Replace</string>
+    <string name="string_swap">Swap</string>
+    <string name="string_new_class">New class</string>
+    <string name="string_edit_class">Edit class</string>
+    <string name="string_edit_homework">Edit homework</string>
+    <string name="string_move_class">Move class</string>
+    <string name="string_add_class_error">You can\'t add more than 6 classes</string>
+    <string name="string_classroom_empty_error">Classroom number must be at least 1 character long</string>
+    <string name="string_classroom_length_error">Classroom number must be less than 5 characters</string>
+    <string name="string_number_empty_error">Choose a number</string>
+    <string name="string_delete_class_message">Are you sure you want to delete %1s?</string>
+    <string name="string_edit_time">Edit time</string>
+
+    <!-- activity_time -->
+    <string name="string_number_class">Number</string>
+    <string name="string_beginning">Beginning</string>
+    <string name="string_end">End</string>
+    <string name="string_select_beginning">Time of the beginning:</string>
+    <string name="string_select_end">Time of the end:</string>
+    <string name="string_edit_class_time">Edit class time</string>
+    <string name="string_delete_time_message">Are you sure you want to delete time information?</string>
+
+    <!-- preferences -->
+    <string name="string_pref_language">Language</string>
+    <string name="string_pref_wipe_data" translatable="false">WipeData</string>
+    <string name="string_pref_theme" translatable="false">AppTheme</string>
+    <string name="string_select_language">Select a language</string>
+    <string name="string_lang_belarusian" translatable="false">Беларуская</string>
+    <string name="string_lang_english" translatable="false">English</string>
+    <string name="string_lang_russian" translatable="false">Русский</string>
+    <string name="string_belarusian_code" translatable="false">be</string>
+    <string name="string_english_code" translatable="false">en</string>
+    <string name="string_russian_code" translatable="false">ru</string>
+    <string name="string_wipe_data">Wipe all data</string>
+    <string name="string_app_theme">App theme</string>
+    <string name="string_misty_forest_pref" translatable="false">MF</string>
+    <string name="string_crimson_sunset_pref" translatable="false">CS</string>
+    <string name="string_mysterious_ocean_pref" translatable="false">MO</string>
+    <string name="string_misty_forest">Misty forest</string>
+    <string name="string_crimson_sunset">Crimson sunset</string>
+    <string name="string_mysterious_ocean">Mysterious ocean</string>
+    <string name="string_wipe_data_message">Are you sure you want to wipe all data?</string>
+    <string name="string_toast_wipe_data">Data deleted successfully</string>
+    <string name="string_toast_theme_changed">Theme is changed</string>
+
+    <!-- dialog_views -->
+    <string name="string_button_ok">OK</string>
+    <string name="string_button_cancel">Cancel</string>
+    <string name="string_button_delete">Delete</string>
+    <string name="string_button_wipe">Wipe</string>
+
+    <!-- context_menu -->
+    <string name="string_cm_delete">Delete</string>
+    <string name="string_cm_edit">Edit</string>
+    <string name="string_cm_move">Move</string>
+
+    <string name="string_widget_no_classes">You have no classes for today</string>
+</resources>

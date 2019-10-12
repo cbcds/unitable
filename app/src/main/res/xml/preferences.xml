@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListPreference
+        android:defaultValue="@string/string_english_code"
+        android:dialogTitle="@string/string_select_language"
+        android:entries="@array/array_languages"
+        android:entryValues="@array/array_lang_code"
+        android:key="@string/string_pref_language"
+        android:title="@string/string_pref_language" />
+
+    <com.cbcds.app.unitable.AppThemePreference
+        android:defaultValue="@string/string_misty_forest"
+        android:key="@string/string_pref_theme"
+        android:title="@string/string_app_theme" />
+
+    <Preference
+        android:key="@string/string_pref_wipe_data"
+        android:title="@string/string_wipe_data" />
+</PreferenceScreen>

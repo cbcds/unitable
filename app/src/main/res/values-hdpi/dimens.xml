@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="rectangle_height">130dp</dimen>
+    <dimen name="rectangle_width">38dp</dimen>
+
+    <dimen name="fab_margin">10dp</dimen>
+
+    <dimen name="imgview_day1_marginTop">20dp</dimen>
+    <dimen name="imgview_day2_marginTop">45dp</dimen>
+    <dimen name="textview_day_marginBottom">6dp</dimen>
+    <dimen name="button_marks_marginTop">50dp</dimen>
+
+    <dimen name="button_dialog_margin">40dp</dimen>
+
+    <dimen name="textview_subject_marginBottom">10dp</dimen>
+</resources>

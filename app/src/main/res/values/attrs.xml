@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Сustom">
+        <attr name="windowBackground" format="reference" />
+        <attr name="colorLight" format="color" />
+        <attr name="colorRectPress" format="color" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorColumnDivider">#60FFFFFF</color>
+    <color name="colorListDivider">#60000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="colorRectPressForest">#0d2a1f</color>
+    <color name="colorPrimaryDarkForest">#164a36</color>
+    <color name="colorPrimaryForest">#00795b</color>
+    <color name="colorAccentForest">#b3d9b1</color>
+    <color name="colorLightForest">#fbfefd</color>
+
+    <color name="colorRectPressSunset">#36263e</color>
+    <color name="colorPrimaryDarkSunset">#4e3659</color>
+    <color name="colorPrimarySunset">#a774b4</color>
+    <color name="colorAccentSunset">#d1d5fa</color>
+    <color name="colorLightSunset">#f3ecf6</color>
+
+    <color name="colorRectPressOcean">#347482</color>
+    <color name="colorPrimaryDarkOcean">#4ba6b9</color>
+    <color name="colorPrimaryOcean">#48aebb</color>
+    <color name="colorAccentOcean">#bddcdf</color>
+    <color name="colorLightOcean">#f0f2f2</color>
+</resources>

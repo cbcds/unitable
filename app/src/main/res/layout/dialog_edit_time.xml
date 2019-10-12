@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_beginning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/string_select_beginning"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TimePicker
+        android:id="@+id/tp_beginning"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:timePickerMode="spinner"
+        app:layout_constraintEnd_toEndOf="@id/tv_beginning"
+        app:layout_constraintStart_toStartOf="@id/tv_beginning"
+        app:layout_constraintTop_toBottomOf="@id/tv_beginning" />
+
+    <TextView
+        android:id="@+id/tv_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/string_select_end"
+        app:layout_constraintEnd_toEndOf="@id/tp_beginning"
+        app:layout_constraintStart_toStartOf="@id/tp_beginning"
+        app:layout_constraintTop_toBottomOf="@id/tp_beginning" />
+
+    <TimePicker
+        android:id="@+id/tp_end"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:timePickerMode="spinner"
+        app:layout_constraintEnd_toEndOf="@id/tv_end"
+        app:layout_constraintStart_toStartOf="@id/tv_end"
+        app:layout_constraintTop_toBottomOf="@id/tv_end" />
+
+    <Button
+        android:id="@+id/dlg_button_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/button_dialog_margin"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="?attr/colorAccent"
+        android:text="@string/string_button_ok"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tp_end" />
+
+    <Button
+        android:id="@+id/dlg_button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/button_dialog_margin"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="?attr/colorAccent"
+        android:text="@string/string_button_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tp_end" />
+
+</android.support.constraint.ConstraintLayout>

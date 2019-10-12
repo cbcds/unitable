@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="?attr/windowBackground" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_timetable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground">
+
+            <TextView
+                android:id="@+id/tv_monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/textview_day_marginBottom"
+                android:text="@string/string_monday_short"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/img_view_monday"
+                app:layout_constraintEnd_toEndOf="@+id/img_view_monday"
+                app:layout_constraintStart_toStartOf="@+id/img_view_monday" />
+
+            <ImageView
+                android:id="@+id/img_view_monday"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/rectangle_height"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/imgview_day1_marginTop"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/shadow"
+                android:elevation="20dp"
+                android:onClick="onDayViewClick"
+                android:src="@drawable/rectangle_background"
+                app:layout_constraintEnd_toStartOf="@+id/img_view_tuesday"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_tuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/textview_day_marginBottom"
+                android:text="@string/string_tuesday_short"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/img_view_tuesday"
+                app:layout_constraintEnd_toEndOf="@+id/img_view_tuesday"
+                app:layout_constraintStart_toStartOf="@+id/img_view_tuesday" />
+
+            <ImageView
+                android:id="@+id/img_view_tuesday"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/rectangle_height"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/shadow"
+                android:elevation="20dp"
+                android:onClick="onDayViewClick"
+                android:src="@drawable/rectangle_background"
+                app:layout_constraintEnd_toStartOf="@+id/img_view_wednesday"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/img_view_monday"
+                app:layout_constraintTop_toTopOf="@+id/img_view_monday" />
+
+            <TextView
+                android:id="@+id/tv_wednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/textview_day_marginBottom"
+                android:text="@string/string_wednesday_short"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/img_view_wednesday"
+                app:layout_constraintEnd_toEndOf="@+id/img_view_wednesday"
+                app:layout_constraintStart_toStartOf="@+id/img_view_wednesday" />
+
+            <ImageView
+                android:id="@+id/img_view_wednesday"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/rectangle_height"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shadow"
+                android:elevation="20dp"
+                android:onClick="onDayViewClick"
+                android:src="@drawable/rectangle_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/img_view_tuesday"
+                app:layout_constraintTop_toTopOf="@+id/img_view_tuesday" />
+
+            <TextView
+                android:id="@+id/tv_thursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/textview_day_marginBottom"
+                android:text="@string/string_thursday_short"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/img_view_thursday"
+                app:layout_constraintEnd_toEndOf="@+id/img_view_thursday"
+                app:layout_constraintStart_toStartOf="@+id/img_view_thursday" />
+
+            <ImageView
+                android:id="@+id/img_view_thursday"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/rectangle_height"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/imgview_day2_marginTop"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/shadow"
+                android:elevation="20dp"
+                android:onClick="onDayViewClick"
+                android:src="@drawable/rectangle_background"
+                app:layout_constraintEnd_toStartOf="@+id/img_view_friday"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_view_monday" />
+
+            <TextView
+                android:id="@+id/tv_friday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/textview_day_marginBottom"
+                android:text="@string/string_friday_short"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/img_view_friday"
+                app:layout_constraintEnd_toEndOf="@+id/img_view_friday"
+                app:layout_constraintStart_toStartOf="@+id/img_view_friday" />
+
+            <ImageView
+                android:id="@+id/img_view_friday"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/rectangle_height"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/shadow"
+                android:elevation="20dp"
+                android:onClick="onDayViewClick"
+                android:src="@drawable/rectangle_background"
+                app:layout_constraintEnd_toStartOf="@+id/img_view_saturday"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/img_view_thursday"
+                app:layout_constraintTop_toTopOf="@+id/img_view_thursday" />
+
+            <TextView
+                android:id="@+id/tv_saturday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/textview_day_marginBottom"
+                android:text="@string/string_saturday_short"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/img_view_saturday"
+                app:layout_constraintEnd_toEndOf="@+id/img_view_saturday"
+                app:layout_constraintStart_toStartOf="@+id/img_view_saturday" />
+
+            <ImageView
+                android:id="@+id/img_view_saturday"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/rectangle_height"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shadow"
+                android:elevation="20dp"
+                android:onClick="onDayViewClick"
+                android:src="@drawable/rectangle_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/img_view_friday"
+                app:layout_constraintTop_toTopOf="@+id/img_view_friday" />
+
+            <Button
+                android:id="@+id/btn_subject_list"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginTop="@dimen/button_marks_marginTop"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/button_background"
+                android:onClick="onMarksListButtonClick"
+                android:padding="5dp"
+                android:text="@string/string_marks_list"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_view_friday" />
+        </android.support.constraint.ConstraintLayout>
+    </RelativeLayout>
+</FrameLayout>

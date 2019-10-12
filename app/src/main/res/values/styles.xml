@@ -1,0 +1,36 @@
+<resources>
+
+    <style name="AppTheme.FoggyForest" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowBackground">@drawable/app_background_forest</item>
+
+        <item name="colorPrimary">@color/colorPrimaryForest</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkForest</item>
+        <item name="colorAccent">@color/colorAccentForest</item>
+        <item name="colorRectPress">@color/colorRectPressForest</item>
+        <item name="colorLight">@color/colorLightForest</item>
+    </style>
+
+    <style name="AppTheme.CrimsonSunset" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowBackground">@drawable/app_background_sunset</item>
+
+        <item name="colorPrimary">@color/colorPrimarySunset</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkSunset</item>
+        <item name="colorAccent">@color/colorAccentSunset</item>
+        <item name="colorRectPress">@color/colorRectPressSunset</item>
+        <item name="colorLight">@color/colorLightSunset</item>
+    </style>
+
+    <style name="AppTheme.MysteriousOcean" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowBackground">@drawable/app_background_ocean</item>
+
+        <item name="colorPrimary">@color/colorPrimaryOcean</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkOcean</item>
+        <item name="colorAccent">@color/colorAccentOcean</item>
+        <item name="colorRectPress">@color/colorRectPressOcean</item>
+        <item name="colorLight">@color/colorLightOcean</item>
+    </style>
+
+    <style name="spinner_style">
+        <item name="android:background">@drawable/spinner_background</item>
+    </style>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/cm_class_edit"
+        android:title="@string/string_cm_edit" />
+
+    <item android:id="@+id/cm_class_move"
+        android:title="@string/string_cm_move" />
+
+    <item
+        android:id="@+id/cm_class_delete"
+        android:title="@string/string_cm_delete" />
+</menu>
